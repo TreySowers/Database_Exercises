@@ -1,7 +1,13 @@
 SELECT DISTINCT last_name
 FROM employees
-GROUP BY last_name DESC
+ORDER BY last_name DESC
 LIMIT 10;
+
+--alternate approach for 1
+SELECT last_name
+FROM employees
+GROUP BY last_name DESC
+LIMIT 10; 
 
 SELECT first_name, last_name
 FROM employees
